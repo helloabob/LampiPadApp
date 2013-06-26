@@ -46,6 +46,9 @@
 		2DE02FBB177972B100A359C9 /* TTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE02FBA177972B100A359C9 /* TTSwitch.m */; };
 		2DE02FBF17797C5700A359C9 /* WBUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE02FBE17797C5700A359C9 /* WBUISlider.m */; };
 		2DE02FC21779872600A359C9 /* GroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE02FC11779872400A359C9 /* GroupListViewController.m */; };
+		2DE02FFA177A89F200A359C9 /* GroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE02FF9177A89F100A359C9 /* GroupDetailViewController.m */; };
+		2DE02FFE177A8B0800A359C9 /* LampItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE02FFD177A8B0800A359C9 /* LampItemView.m */; };
+		2DE03000177A8BDD00A359C9 /* lamp_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE02FFF177A8BDD00A359C9 /* lamp_icon.png */; };
 		2DEA123D1779238400A7FB62 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA12361779238400A7FB62 /* MMDrawerBarButtonItem.m */; };
 		2DEA123E1779238400A7FB62 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA12381779238400A7FB62 /* MMDrawerController.m */; };
 		2DEA123F1779238400A7FB62 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA123A1779238400A7FB62 /* MMDrawerVisualState.m */; };
@@ -112,6 +115,12 @@
 		2DE02FBE17797C5700A359C9 /* WBUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBUISlider.m; path = ExampleFiles/WBUISlider.m; sourceTree = "<group>"; };
 		2DE02FC01779872400A359C9 /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupListViewController.h; path = ViewControllers/GroupListViewController.h; sourceTree = "<group>"; };
 		2DE02FC11779872400A359C9 /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupListViewController.m; path = ViewControllers/GroupListViewController.m; sourceTree = "<group>"; };
+		2DE02FF7177A7EFC00A359C9 /* MMDrawerControllerKitchenSink copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MMDrawerControllerKitchenSink copy-Info.plist"; path = "/Users/wangbo/Desktop/ios_proj/LampiPadApp/MMDrawerControllerKitchenSink copy-Info.plist"; sourceTree = "<absolute>"; };
+		2DE02FF8177A89F100A359C9 /* GroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupDetailViewController.h; path = ViewControllers/GroupDetailViewController.h; sourceTree = "<group>"; };
+		2DE02FF9177A89F100A359C9 /* GroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupDetailViewController.m; path = ViewControllers/GroupDetailViewController.m; sourceTree = "<group>"; };
+		2DE02FFC177A8B0800A359C9 /* LampItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampItemView.h; sourceTree = "<group>"; };
+		2DE02FFD177A8B0800A359C9 /* LampItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampItemView.m; sourceTree = "<group>"; };
+		2DE02FFF177A8BDD00A359C9 /* lamp_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_icon.png; sourceTree = "<group>"; };
 		2DEA12351779238400A7FB62 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = ExampleFiles/lib/MMDrawerBarButtonItem.h; sourceTree = SOURCE_ROOT; };
 		2DEA12361779238400A7FB62 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = ExampleFiles/lib/MMDrawerBarButtonItem.m; sourceTree = SOURCE_ROOT; };
 		2DEA12371779238400A7FB62 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = ExampleFiles/lib/MMDrawerController.h; sourceTree = SOURCE_ROOT; };
@@ -147,6 +156,7 @@
 				294A1D1617199537005BF6B1 /* ExampleFiles */,
 				294A1D0F17199537005BF6B1 /* Frameworks */,
 				294A1D0E17199537005BF6B1 /* Products */,
+				2DE02FF7177A7EFC00A359C9 /* MMDrawerControllerKitchenSink copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +182,7 @@
 		294A1D1617199537005BF6B1 /* ExampleFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2DE02FFB177A8AEF00A359C9 /* Views */,
 				2DE02F6717793E1600A359C9 /* images */,
 				294A1D1F17199537005BF6B1 /* MMAppDelegate.h */,
 				294A1D2017199537005BF6B1 /* MMAppDelegate.m */,
@@ -247,6 +258,8 @@
 				2DE02F6517793C2D00A359C9 /* OverallViewController.m */,
 				2DE02FC01779872400A359C9 /* GroupListViewController.h */,
 				2DE02FC11779872400A359C9 /* GroupListViewController.m */,
+				2DE02FF8177A89F100A359C9 /* GroupDetailViewController.h */,
+				2DE02FF9177A89F100A359C9 /* GroupDetailViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -283,6 +296,7 @@
 		2DE02F6717793E1600A359C9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2DE02FFF177A8BDD00A359C9 /* lamp_icon.png */,
 				2DE02F6817793E1600A359C9 /* btn_test_back.png */,
 			);
 			path = images;
@@ -326,12 +340,21 @@
 			name = WBUISlider;
 			sourceTree = "<group>";
 		};
+		2DE02FFB177A8AEF00A359C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DE02FFC177A8B0800A359C9 /* LampItemView.h */,
+				2DE02FFD177A8B0800A359C9 /* LampItemView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		294A1D0C17199537005BF6B1 /* MMDrawerControllerKitchenSink */ = {
+		294A1D0C17199537005BF6B1 /* LampiPadApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 294A1D2A17199537005BF6B1 /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSink" */;
+			buildConfigurationList = 294A1D2A17199537005BF6B1 /* Build configuration list for PBXNativeTarget "LampiPadApp" */;
 			buildPhases = (
 				294A1D0917199537005BF6B1 /* Sources */,
 				294A1D0A17199537005BF6B1 /* Frameworks */,
@@ -341,7 +364,7 @@
 			);
 			dependencies = (
 			);
-			name = MMDrawerControllerKitchenSink;
+			name = LampiPadApp;
 			productName = MMSideDrawerContainerViewController;
 			productReference = 294A1D0D17199537005BF6B1 /* MMDrawerControllerKitchenSink.app */;
 			productType = "com.apple.product-type.application";
@@ -368,7 +391,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				294A1D0C17199537005BF6B1 /* MMDrawerControllerKitchenSink */,
+				294A1D0C17199537005BF6B1 /* LampiPadApp */,
 			);
 		};
 /* End PBXProject section */
@@ -397,6 +420,7 @@
 				2DE02FB6177972A400A359C9 /* square-switch-thumb@2x.png in Resources */,
 				2DE02FB7177972A400A359C9 /* square-switch-track.png in Resources */,
 				2DE02FB8177972A400A359C9 /* square-switch-track@2x.png in Resources */,
+				2DE03000177A8BDD00A359C9 /* lamp_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +452,8 @@
 				2DE02FBB177972B100A359C9 /* TTSwitch.m in Sources */,
 				2DE02FBF17797C5700A359C9 /* WBUISlider.m in Sources */,
 				2DE02FC21779872600A359C9 /* GroupListViewController.m in Sources */,
+				2DE02FFA177A89F200A359C9 /* GroupDetailViewController.m in Sources */,
+				2DE02FFE177A8B0800A359C9 /* LampItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		294A1D2A17199537005BF6B1 /* Build configuration list for PBXNativeTarget "MMDrawerControllerKitchenSink" */ = {
+		294A1D2A17199537005BF6B1 /* Build configuration list for PBXNativeTarget "LampiPadApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				294A1D2B17199537005BF6B1 /* Debug */,

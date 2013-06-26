@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "294A1D0C17199537005BF6B1"
+               BlueprintIdentifier = "2DE02FC3177A7EFB00A359C9"
                BuildableName = "MMDrawerControllerKitchenSink.app"
-               BlueprintName = "LampiPadApp"
+               BlueprintName = "MMDrawerControllerKitchenSink copy"
                ReferencedContainer = "container:LampiPadApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "294A1D0C17199537005BF6B1"
+            BlueprintIdentifier = "2DE02FC3177A7EFB00A359C9"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "LampiPadApp"
+            BlueprintName = "MMDrawerControllerKitchenSink copy"
             ReferencedContainer = "container:LampiPadApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "294A1D0C17199537005BF6B1"
+            BlueprintIdentifier = "2DE02FC3177A7EFB00A359C9"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "LampiPadApp"
+            BlueprintName = "MMDrawerControllerKitchenSink copy"
             ReferencedContainer = "container:LampiPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "294A1D0C17199537005BF6B1"
+            BlueprintIdentifier = "2DE02FC3177A7EFB00A359C9"
             BuildableName = "MMDrawerControllerKitchenSink.app"
-            BlueprintName = "LampiPadApp"
+            BlueprintName = "MMDrawerControllerKitchenSink copy"
             ReferencedContainer = "container:LampiPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

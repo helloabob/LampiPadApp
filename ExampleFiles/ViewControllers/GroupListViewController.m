@@ -8,6 +8,10 @@
 
 #import "GroupListViewController.h"
 
+#import "CommonCenterViewController.h"
+
+#import "GroupDetailViewController.h"
+
 @interface GroupListViewController ()
 
 @end
@@ -36,13 +40,26 @@
     self.tblList.dataSource = self;
     [self.view addSubview:self.tblList];
     
-    self.arrayMenu = [NSArray arrayWithObjects:@"Group1",@"Group2" , nil];
+    self.arrayMenu = [NSArray arrayWithObjects:@"Group1", @"Group2" , nil];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addGroup)];
+    
     self.navigationItem.rightBarButtonItem = item;
+    
 //    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:uibarbutton target:self action:nil];
     
     
+}
+
+- (void)addGroup {
+    GroupDetailViewController *vv = [[GroupDetailViewController alloc] init];
+//    [self.navigationController presentViewController:vv animated:YES completion:nil];
+//    UIViewController *vv = [[UIViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vv];
+//    [self.navigationController pushViewController:vv animated:YES];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
+    
+    NSLog(@"addGroup");
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,35 +103,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
     
-    //    if (indexPath.row == DeviceConfigRow) {
-    //        DeviceListViewController *deviceViewController = [[DeviceListViewController alloc] init];
-    //        [self.navigationController pushViewController:deviceViewController animated:YES];
-    //        [deviceViewController release];
-//    if (indexPath.row == self.arrayMenu.count) {
-//        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
-//        hud.labelText = @"Reseting...";
-//        [self.navigationController.view addSubview:hud];
-//        [hud show:YES];
-//        [hud hide:YES afterDelay:1.0f];
-//        [ConfigurationManager resetAllPresets];
-//    } else {
-//        PresetConfigViewController *detailViewController = [[PresetConfigViewController alloc] init];
-//        detailViewController.title = [[self.arrayMenu objectAtIndex:indexPath.row] objectForKey:PresetNameKey];
-//        [Common setCurrentConfigPresetName:[[self.arrayMenu objectAtIndex:indexPath.row] objectForKey:PresetNameKey]];
-//        //        detailViewController.title = [[self.arrayMenu objectAtIndex:indexPath.row] objectForKey:OfficeNameKey];
-//        //        detailViewController.roomIndex = indexPath.row;
-//        // ...
-//        // Pass the selected object to the new view controller.
-//        [self.navigationController pushViewController:detailViewController animated:YES];
-//        [detailViewController release];
-//    }
+    CommonCenterViewController *vv = [[CommonCenterViewController alloc] init];
+    [self.navigationController presentViewController:vv animated:YES completion:nil];
     
-    //
-    //    }
     
-//    [self performSelector:@selector(unselectCurrentRow) withObject:nil afterDelay:0.5f];
 }
 
 @end
