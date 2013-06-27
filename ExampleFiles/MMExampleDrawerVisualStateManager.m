@@ -63,7 +63,7 @@
         default:
             visualStateBlock =  ^(MMDrawerController * drawerController, MMDrawerSide drawerSide, CGFloat percentVisible){
                 
-                UIViewController * sideDrawerViewController;
+                UIViewController * sideDrawerViewController = nil;
                 CATransform3D transform;
                 CGFloat maxDrawerWidth;
                 

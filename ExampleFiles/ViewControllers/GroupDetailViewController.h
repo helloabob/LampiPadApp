@@ -8,6 +8,12 @@
 
 #import "CommonCenterViewController.h"
 
-@interface GroupDetailViewController : CommonCenterViewController
+@interface GroupDetailViewController : CommonCenterViewController<UIAlertViewDelegate> {
+    
+}
+
+@property(nonatomic, strong) NSMutableArray *devices;
+
+@property(nonatomic, strong) NSString *groupName;
 
 @end

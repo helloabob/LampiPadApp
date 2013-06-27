@@ -611,7 +611,7 @@ static CAKeyframeAnimation * bounceKeyFrameAnimationForDistanceOnView(CGFloat di
         if (oldShadowPath) {
             [self.centerContainerView.layer addAnimation:((^ {
                 CABasicAnimation *transition = [CABasicAnimation animationWithKeyPath:@"shadowPath"];
-                transition.fromValue = (__bridge id)oldShadowPath;
+                transition.fromValue = (id)oldShadowPath;
                 transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
                 transition.duration = duration;
                 return transition;

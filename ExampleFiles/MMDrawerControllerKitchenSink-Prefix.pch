@@ -16,3 +16,54 @@
 
 #define appWidth 1024
 #define appHeight 704
+
+#define light1 @"light_01"
+#define light2 @"light_02"
+#define light3 @"light_03"
+#define light4 @"light_04"
+
+#define PowerBalanceTypeName    @"powerBalance"
+#define LuxSpaceTypeName        @"luxSpace"
+
+#define lightx @"light_0%d"
+
+
+#define MaxDimmingLevel         220.0
+
+/**********device database keys*************/
+#define DeviceNameKey           @"deviceNameKey"
+#define DimmingLevelKey         @"dimmingLevelKey"
+#define LastOnTimeIntervalKey   @"lastOnTimeIntervalKey"
+#define DeviceTypeKey           @"deviceTypeKey"
+#define DeviceIpKey             @"deviceIpKey"
+#define DeviceMacKey            @"deviceMacKey"
+
+#define DeviceGroupKey          @"deviceGroupKey"
+
+#define DeviceUserDefaultKey    @"deviceUserDefaultKey"
+/**********end*************/
+
+/**********office database keys*************/
+#define OfficeNameKey           @"officeNameKey"
+#define OfficeDeviceNameKey     @"officeDeviceNameKey"
+
+#define OfficeUserDefaultKey    @"officeUserDefaultKey"
+/**********end*************/
+
+/**********preset database keys*************/
+#define PresetNameKey           @"presetNameKey"
+#define PresetDeviceNameKey     @"presetDeviceNameKey"
+#define PresetLabelNameKey      @"presetLabelNameKey"
+
+#define PresetUserDefaultKey    @"presetUserDefaultKey"
+/**********end*************/
+
+/**********office detail info keys*************/
+#define DetailDeviceNameKey     @"detailDeviceNameKey"
+#define DetailDimmingKey        @"detailDimmingKey"
+#define DetailRunningHourKey    @"detailRunningHourKey"
+#define DetailRunningMinuteKey  @"detailRunningMinuteKey"
+#define DetailIOKey             @"detailIOKey"
+#define DetailIPKey             @"detailIPKey"
+
+/**********end*************/

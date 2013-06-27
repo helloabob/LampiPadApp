@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LampItemView : UIView
+typedef enum {
+    LampItemUnSelected=0,
+    LampItemSelected,
+    LampItemDisnabled,
+}LampItemState;
+
+@interface LampItemView : UIView {
+    LampItemState _state;
+    UIImageView *imageArrow;
+}
+
+@property (nonatomic, assign) LampItemState state;
+@property (nonatomic, strong) NSString *lampName;
+
+- (void)toggleState;
 
 @end

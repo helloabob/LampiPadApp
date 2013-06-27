@@ -63,6 +63,7 @@
             color = self.menuButtonHighlightedColor;
             break;
         default:
+            color = [UIColor blackColor];
             break;
     }
     return color;

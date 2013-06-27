@@ -294,7 +294,7 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
         }
         case MMCenterViewControllerSectionLeftViewState:
         case MMCenterViewControllerSectionRightViewState:{
-            UIViewController * sideDrawerViewController;
+            UIViewController * sideDrawerViewController = nil;
             MMDrawerSide drawerSide;
             if(indexPath.section == MMCenterViewControllerSectionLeftViewState){
                 sideDrawerViewController = self.mm_drawerController.leftDrawerViewController;

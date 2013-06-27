@@ -29,12 +29,18 @@
 
 #import "OverallViewController.h"
 
+#import "ConfigurationManager.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 @implementation MMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //register user default data.
+    NSLog(@"register default data");
+    [ConfigurationManager registerDefaultData];
+    
     UIViewController * leftSideDrawerViewController = [[MMExampleLeftSideDrawerViewController alloc] init];
     
 //    UIViewController * centerViewController = [[MMExampleCenterTableViewController alloc] initWithStyle:UITableViewStyleGrouped];

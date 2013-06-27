@@ -12,11 +12,18 @@
 
 #import "GroupDetailViewController.h"
 
+#import "ConfigurationManager.h"
+
 @interface GroupListViewController ()
 
 @end
 
 @implementation GroupListViewController
+
+- (void)dealloc {
+    self.arrayMenu = nil;
+    [super dealloc];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +32,12 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.arrayMenu = [ConfigurationManager getGroups];
+    [self.tblList reloadData];
 }
 
 - (void)viewDidLoad
@@ -40,11 +53,14 @@
     self.tblList.dataSource = self;
     [self.view addSubview:self.tblList];
     
-    self.arrayMenu = [NSArray arrayWithObjects:@"Group1", @"Group2" , nil];
+//    self.arrayMenu = [NSArray arrayWithObjects:@"Group1", @"Group2" , nil];
+    
+    self.arrayMenu = [NSArray array];
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addGroup)];
     
     self.navigationItem.rightBarButtonItem = item;
+    [item release];
     
 //    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:uibarbutton target:self action:nil];
     
@@ -52,10 +68,10 @@
 }
 
 - (void)addGroup {
-    GroupDetailViewController *vv = [[GroupDetailViewController alloc] init];
+    GroupDetailViewController *vv = [[[GroupDetailViewController alloc] init] autorelease];
 //    [self.navigationController presentViewController:vv animated:YES completion:nil];
 //    UIViewController *vv = [[UIViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vv];
+    UINavigationController *nav = [[[UINavigationController alloc] initWithRootViewController:vv] autorelease];
 //    [self.navigationController pushViewController:vv animated:YES];
     [self.navigationController presentViewController:nav animated:YES completion:nil];
     
@@ -79,6 +95,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    
     return self.arrayMenu.count;
 }
 
@@ -104,9 +121,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    CommonCenterViewController *vv = [[CommonCenterViewController alloc] init];
-    [self.navigationController presentViewController:vv animated:YES completion:nil];
-    
+    GroupDetailViewController *vv = [[[GroupDetailViewController alloc] init] autorelease];
+    vv.groupName = [self.arrayMenu objectAtIndex:indexPath.row];
+    //    [self.navigationController presentViewController:vv animated:YES completion:nil];
+    //    UIViewController *vv = [[UIViewController alloc] init];
+    UINavigationController *nav = [[[UINavigationController alloc] initWithRootViewController:vv] autorelease];
+    //    [self.navigationController pushViewController:vv animated:YES];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
     
 }
 

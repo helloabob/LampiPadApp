@@ -72,11 +72,13 @@
     };
     
     [self.view addSubview:squareThumbSwitch];
+    [squareThumbSwitch release];
     
     WBUISlider *slider = [[WBUISlider alloc] initWithFrame:CGRectMake(CGRectGetMaxX(squareThumbSwitch.frame) + 20, nx + 20, CGRectGetMaxX(btn.frame)-(CGRectGetMaxX(squareThumbSwitch.frame) + 20), 35)];
     [self.view addSubview:slider];
 //    slider.enabled = NO;
     nslider = slider;
+    [slider release];
 }
 
 - (void)didReceiveMemoryWarning

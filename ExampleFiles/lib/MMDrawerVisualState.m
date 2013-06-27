@@ -33,7 +33,7 @@
         CGFloat maxDistance = 50;
         CGFloat distance = maxDistance * percentVisible;
         CATransform3D translateTransform;
-        UIViewController * sideDrawerViewController;
+        UIViewController * sideDrawerViewController = nil;
         if(drawerSide == MMDrawerSideLeft) {
             sideDrawerViewController = drawerController.leftDrawerViewController;
             translateTransform = CATransform3DMakeTranslation((maxDistance-distance), 0.0, 0.0);
@@ -118,7 +118,7 @@
     ^(MMDrawerController * drawerController, MMDrawerSide drawerSide, CGFloat percentVisible){
         NSParameterAssert(parallaxFactor >= 1.0);
         CATransform3D transform;
-        UIViewController * sideDrawerViewController;
+        UIViewController * sideDrawerViewController = nil;
         if(drawerSide == MMDrawerSideLeft) {
             sideDrawerViewController = drawerController.leftDrawerViewController;
             CGFloat distance = MAX(drawerController.maximumLeftDrawerWidth,drawerController.visibleLeftDrawerWidth);
