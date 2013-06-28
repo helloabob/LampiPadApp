@@ -8,6 +8,8 @@
 
 #import "LampItemView.h"
 
+//#import <QuartzCore/QuartzCore.h>
+
 @implementation LampItemView
 @synthesize state = _state;
 @synthesize lampName = _lampName;
@@ -43,6 +45,9 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(lampTapped)];
         [self addGestureRecognizer:tap];
         _state = LampItemUnSelected;
+        
+//        self.layer.cornerRadius = 10.0f;
+//        self.layer.masksToBounds = YES;
     }
     return self;
 }

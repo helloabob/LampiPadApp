@@ -70,6 +70,7 @@
     squareThumbSwitch.changeHandler = ^(BOOL on){
         nslider.enabled = on;
     };
+    squareThumbSwitch.on = YES;
     
     [self.view addSubview:squareThumbSwitch];
     [squareThumbSwitch release];

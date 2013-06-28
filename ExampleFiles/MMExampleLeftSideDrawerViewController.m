@@ -74,7 +74,7 @@
         } else if(indexPath.row == 1) {
             [cell.textLabel setText:@"Preset"];
         } else {
-            [cell.textLabel setText:@"Async"];
+            [cell.textLabel setText:@"Sync"];
         }
         
 //        [cell.textLabel setText:[NSString stringWithFormat:@"Width %d",[self.drawerWidths[indexPath.row] intValue]]];

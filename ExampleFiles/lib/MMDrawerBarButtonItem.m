@@ -93,6 +93,7 @@
             color = self.shadowHighlightedColor;
             break;
         default:
+            color = self.shadowNormalColor;
             break;
     }
     return color;
@@ -195,6 +196,7 @@
     MMDrawerMenuButtonView * buttonView = [[MMDrawerMenuButtonView alloc] initWithFrame:CGRectMake(0, 0, 26, 26)];
     [buttonView addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     self = [self initWithCustomView:buttonView];
+    [buttonView release];
     if(self){
         [self setButtonView:buttonView];
     }
